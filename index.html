@@ -30,6 +30,10 @@
 
     <!-- STYLES SECTION -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+
+    <!-- SCRIPT FILE -->
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Social Media Dashboard</title>
 
@@ -39,14 +43,17 @@
         margin-top: 3.6rem;
         font-size: 11px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
-  <body>
 
+  <body>
     <!-- HEADER SECTION -->
     <header>
       <section class="container header-section">
@@ -57,11 +64,11 @@
         <div class="dark-mode-word">
           <p>Dark Mode</p>
           <i
-            class="fa fa-toggle-on btn-toggle-on btn fa-2x"
+            class="fa fa-toggle-on btn-toggle-on btn fa-3x"
             aria-hidden="true"
           ></i>
           <i
-            class="fa fa-toggle-off btn-toggle-off btn fa-2x hidden"
+            class="fa fa-toggle-off btn-toggle-off btn fa-3x hidden"
             aria-hidden="true"
           ></i>
         </div>
@@ -77,9 +84,12 @@
             ></i
             ><span class="username">@nathanf</span>
           </p>
-          <p>1987</p>
+          <p class="number social-media-count">1987</p>
           <p>Followers</p>
-          <span><i class="fa fa-caret-up" aria-hidden="true"></i></i>12 Today</span>
+          <p>
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain"> 12 Today</span>
+          </p>
         </div>
 
         <div class="social-media-detail twitter-detail">
@@ -87,9 +97,12 @@
             <i class="social-icon fa fa-twitter" aria-hidden="true"></i
             ><span class="username">@nathanf</span>
           </p>
-          <p>1044</p>
+          <p class="number social-media-count">1044</p>
           <p>Followers</p>
-          <span><i class="fa fa-caret-up" aria-hidden="true"></i></i>99 Today</span>
+          <p>
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain"> 99 Today</span>
+          </p>
         </div>
 
         <div class="social-media-detail instagram-detail">
@@ -97,9 +110,12 @@
             <i class="social-icon fa fa-instagram" aria-hidden="true"></i
             ><span class="username">@realnathanf</span>
           </p>
-          <p>11k</p>
+          <p class="number social-media-count">11k</p>
           <p>Followers</p>
-          <span><i class="fa fa-caret-up" aria-hidden="true"></i></i>12 Today</span>
+          <p>
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain"> 12 Today</span>
+          </p>
         </div>
 
         <div class="social-media-detail youtube-detail">
@@ -107,115 +123,123 @@
             <i class="social-icon fa-brands fa-square-youtube"></i
             ><span class="username">Nathan F.</span>
           </p>
-          <p>8239</p>
+          <p class="number social-media-count">8239</p>
           <p>Subscribers</p>
-          <span><i class="fa fa-caret-down" aria-hidden="true"></i></i>144 Today</span>
+          <p>
+            <i class="fa fa-caret-down" aria-hidden="true"></i
+            ><span class="count-loss"> 144 Today</span>
+          </p>
         </div>
       </section>
 
       <!-- BOTTOM CARDS SECTION -->
       <div class="container second-container-heading">
-          <h2>Overview - Today</h2>
+        <h2>Overview - Today</h2>
       </div>
       <section class="container daily-overviews first-overview-column">
         <div class="daily-overview">
-          <p class="daily-title"> Page Views</p>
-          <i
-          class="social-icon fa fa-facebook-official"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">87</p>
-          <p class="daily-change"><i class="fa fa-caret-up" aria-hidden="true"></i><span>3%</span></p>
+          <p class="daily-title">Page Views</p>
+          <i class="social-icon fa fa-facebook-official" aria-hidden="true"></i>
+
+          <p class="daily-count number">87</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain">3%</span>
+          </p>
         </div>
 
         <div class="daily-overview">
           <p class="daily-title">Likes</p>
-          <i
-          class="social-icon fa fa-facebook-official"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">52</p>
-          <p class="daily-change"><i class="fa fa-caret-down" aria-hidden="true"></i><span class=" count-loss">2%</span></p>
+          <i class="social-icon fa fa-facebook-official" aria-hidden="true"></i>
+
+          <p class="daily-count number">52</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-down" aria-hidden="true"></i
+            ><span class="count-loss">2%</span>
+          </p>
         </div>
 
         <div class="daily-overview">
           <p class="daily-title">Likes</p>
-          <i
-          class="social-icon fa fa-instagram"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">5462</p>
-          <p class="daily-change"><i class="fa fa-caret-up" aria-hidden="true"></i><span>2257%</span></p>
+          <i class="social-icon fa fa-instagram" aria-hidden="true"></i>
+
+          <p class="daily-count number">5462</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain">2257%</span>
+          </p>
         </div>
-        
+
         <div class="daily-overview">
           <p class="daily-title">Profile Views</p>
-          <i
-          class="social-icon fa fa-instagram"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">52k</p>
-          <p class="daily-change"><i class="fa fa-caret-up" aria-hidden="true"></i><span>1375%</span></p>
+          <i class="social-icon fa fa-instagram" aria-hidden="true"></i>
+
+          <p class="daily-count number">52k</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain">1375%</span>
+          </p>
         </div>
       </section>
 
       <section class="container daily-overviews">
         <div class="daily-overview">
           <p class="daily-title">Retweets</p>
-          <i
-          class="social-icon fa fa-twitter"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">117</p>
-          <p class="daily-change"><i class="fa fa-caret-up" aria-hidden="true"></i><span>303%</span></p>
+          <i class="social-icon fa fa-twitter" aria-hidden="true"></i>
+
+          <p class="daily-count number">117</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain">303%</span>
+          </p>
+        </div>
+
+        <div class="daily-overview">
+          <p class="daily-title">Likes</p>
+          <i class="social-icon fa fa-twitter" aria-hidden="true"></i>
+
+          <p class="daily-count number">507</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-up" aria-hidden="true"></i
+            ><span class="count-gain">553%</span>
+          </p>
         </div>
 
         <div class="daily-overview">
           <p class="daily-title">Likes</p>
           <i
-          class="social-icon fa fa-twitter"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">507</p>
-          <p class="daily-change"><i class="fa fa-caret-up" aria-hidden="true"></i><span>553%</span></p>
+            class="social-icon fa-brands fa-square-youtube"
+            aria-hidden="true"
+          ></i>
+
+          <p class="daily-count number">107</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-down" aria-hidden="true"></i
+            ><span class="count-loss">19%</span>
+          </p>
         </div>
 
         <div class="daily-overview">
-          <p class="daily-title">Likes</p>
+          <p class="daily-title">Total Views</p>
           <i
-          class="social-icon fa-brands fa-square-youtube"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">107</p>
-          <p class="daily-change"><i class="fa fa-caret-down" aria-hidden="true"></i><span class=" count-loss">19%</span></p>
-        </div>
-        
-        <div class="daily-overview">
-          <p class="daily-title"> Total Views</p>
-          <i
-          class="social-icon fa-brands fa-square-youtube"
-          aria-hidden="true"
-        ></i>
-        
-          <p class="daily-count">1407</p>
-          <p class="daily-change "><i class="fa fa-caret-down" aria-hidden="true"></i><span class=" count-loss">12%</span></p>
+            class="social-icon fa-brands fa-square-youtube"
+            aria-hidden="true"
+          ></i>
+
+          <p class="daily-count number">1407</p>
+          <p class="daily-change">
+            <i class="fa fa-caret-down" aria-hidden="true"></i
+            ><span class="count-loss">12%</span>
+          </p>
         </div>
       </section>
     </main>
 
-
     <div class="attribution">
-      Challenge by
+      <p>Challenge by</p>
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+        >Frontend Mentor.</a
+      >Coded by <a href="#"><p>Tomisin Eniola</p> </a>.
     </div>
   </body>
 </html>

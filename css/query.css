@@ -1,0 +1,211 @@
+/* 
+
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+/*******************************/
+/* BELOW 1500px SECTION */
+/*******************************/
+@media (max-width: 94em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/*******************************/
+/* BELOW 1300px SECTION */
+/*******************************/
+@media (max-width: 82em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*******************************/
+/* BELOW 1200px SECTION */
+/*******************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+  }
+
+  h2 {
+    margin-top: -5.4rem;
+  }
+
+  .social-media-details {
+    transform: translateY(-24.4%);
+  }
+
+  header {
+    padding-bottom: 13rem;
+  }
+
+  .header-section,
+  .social-media-details,
+  .daily-overviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dark-mode-word {
+    justify-self: flex-end;
+  }
+
+  .btn {
+    font-size: 3.6rem;
+  }
+
+  .first-overview-column {
+    margin-top: -2.4rem;
+  }
+}
+
+/*******************************/
+/* BELOW 1000px SECTION */
+/*******************************/
+@media (max-width: 62.5em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+/*******************************/
+/* BELOW 870px SECTION */
+/*******************************/
+@media (max-width: 55em) {
+  html {
+    font-size: 31.25%;
+  }
+}
+
+/*******************************/
+/* BELOW 770px SECTION */
+/*******************************/
+@media (max-width: 49em) {
+  html {
+    font-size: 25%;
+  }
+}
+
+/*******************************/
+/* BELOW 600px SECTION */
+/*******************************/
+@media (max-width: 38em) {
+  html {
+    font-size: 18.75%;
+  }
+}
+
+/*******************************/
+/* BELOW 440px SECTION */
+/*******************************/
+@media (max-width: 28em) {
+  body {
+    line-height: 1.5;
+  }
+
+  .container {
+    padding: 4.8rem;
+    width: 125rem;
+  }
+
+  .header-section,
+  .social-media-details,
+  .daily-overviews {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .social-media-details {
+    transform: translateY(-10%);
+  }
+
+  .social-media-heading {
+    padding-bottom: 6.4rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 5.2rem;
+  }
+
+  h1 {
+    font-size: 7.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn,
+  .daily-count {
+    font-size: 7.4rem;
+  }
+
+  .social-media-count {
+    font-size: 12.8rem;
+  }
+
+  .social-media-detail {
+    padding: 4.8rem;
+  }
+
+  .social-icon {
+    margin-right: 1.6rem;
+  }
+
+  .fa,
+  .fa-brands {
+    font-size: 5.2rem;
+  }
+
+  .daily-count {
+    font-size: 7.4rem;
+  }
+
+  p,
+  .daily-title {
+    font-size: 3.6rem;
+  }
+
+  .social-media-detail p:nth-child(3) {
+    margin-block: -3.2rem 4.8rem;
+  }
+
+  .fa-caret-down,
+  .fa-caret-up {
+    font-size: 3rem;
+  }
+
+  .second-container-heading {
+    margin-top: 8rem;
+    padding-bottom: 0;
+    padding-bottom: 1.8rem;
+  }
+
+  .btn {
+    align-self: flex-end;
+    font-size: 9.8rem;
+  }
+
+  .daily-overviews {
+    padding-block: 0rem;
+  }
+
+  .daily-overview {
+    row-gap: 6.4rem;
+  }
+
+  .dark-mode-word {
+    border-top: 1px solid hsl(230, 22%, 74%);
+    padding-top: 6.4rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
