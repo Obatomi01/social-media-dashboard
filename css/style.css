@@ -28,6 +28,7 @@ body {
   width: 100%;
 
   color: hsl(228, 12%, 44%);
+  transition: all 3s ease;
 }
 
 h1 {
@@ -59,6 +60,16 @@ h2 {
 .hidden {
   display: none;
   visibility: hidden;
+}
+
+header,
+body,
+.social-media-detail,
+.daily-overview,
+h1,
+h2,
+.number {
+  transition: all 2s ease-in 0.3s;
 }
 
 /*******************************/
